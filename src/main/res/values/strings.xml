@@ -5,4 +5,6 @@
     <string name="title_activity_custom_view">Custom Views</string>
     <string name="title_activity_pie_chart">PieChartActivity</string>
     <string name="reset_button">Reset</string>
+    <string name="title_activity_parcel_test">ParcelTest</string>
+    <string name="title_activity_parcel_result">ParcelResult</string>
 </resources>

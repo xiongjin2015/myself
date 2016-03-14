@@ -34,6 +34,18 @@
                 <category android:name="haha.custom.view" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.ParcelTestActivity"
+            android:label="@string/title_activity_parcel_test" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="haha.myself" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ParcelResultActivity"
+            android:label="@string/title_activity_parcel_result" >
+        </activity>
     </application>
 
 </manifest>

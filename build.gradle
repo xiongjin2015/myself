@@ -48,8 +48,9 @@ dependencies {
     //编译libs目录下的所有jar包
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //依赖appcompat库
-    compile 'com.android.support:appcompat-v7:22.2.1'
     //compile files('libs/universal-image-loader-1.9.3.jar')
     //编译extras目录下的CommonTool模块,表示该module依赖其他库module
     //compile project(':self')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
 }
