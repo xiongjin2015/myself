@@ -1,0 +1,55 @@
+//声明是Android程序，如果是android库，应该是'com.android.library'
+apply plugin: 'com.android.application'
+
+android {
+    //编译SDK的版本
+    compileSdkVersion 22
+    //Build Tools的版本
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        //应用的包名
+        applicationId "com.haha.myself"
+        minSdkVersion 9
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    //配置debug和release版本的一些参数，比如混淆、签名配置
+    buildTypes {
+        //Debug版本配置
+        debug {
+            //是否进行混淆
+            minifyEnabled true
+            shrinkResources true
+            //混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        //release版本配置
+        release {
+            //是否进行混淆：minifyEnabled为true表示进行混淆；下面两个配置为true，会自动移除不用的资源
+            minifyEnabled true
+            shrinkResources true
+            //混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //移除lint检查的error,忽略lint错误
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    //编译libs目录下的所有jar包
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //依赖appcompat库
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    //compile files('libs/universal-image-loader-1.9.3.jar')
+    //编译extras目录下的CommonTool模块,表示该module依赖其他库module
+    //compile project(':self')
+}
