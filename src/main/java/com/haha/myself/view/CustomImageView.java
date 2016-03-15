@@ -19,7 +19,7 @@ import com.haha.myself.R;
 /**
  * Created by baidu on 16/3/15.
  */
-public class ImageView extends View {
+public class CustomImageView extends View {
 
     private static final int IMAGE_SCALE_FITXY = 0;
 
@@ -64,11 +64,11 @@ public class ImageView extends View {
      */
     private int mHeight;
 
-    public ImageView(Context context) {
+    public CustomImageView(Context context) {
         this(context, null);
     }
 
-    public ImageView(Context context, AttributeSet attrs) {
+    public CustomImageView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
@@ -79,7 +79,7 @@ public class ImageView extends View {
      * @param attrs
      * @param defStyleAttr
      */
-    public ImageView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CustomImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.CustomImageView, defStyleAttr, 0);

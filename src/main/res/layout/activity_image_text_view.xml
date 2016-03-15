@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
     <!-- 字体的宽度大于图片，且View宽度设置为wrap_content -->
-    <com.haha.myself.view.ImageView
+    <com.haha.myself.view.CustomImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -20,7 +20,7 @@
         xj:titleTextSize = "29sp"/>
 
     <!-- View的宽度设置为精确值，字体的长度大于次宽度-->
-    <com.haha.myself.view.ImageView
+    <com.haha.myself.view.CustomImageView
         android:layout_width="119dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -32,7 +32,7 @@
         xj:titleTextSize="19sp"/>
 
     <!-- 图片的宽度大于字体，且View宽高设置为match_parent-->
-    <com.haha.myself.view.ImageView
+    <com.haha.myself.view.CustomImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
