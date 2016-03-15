@@ -31,6 +31,7 @@
         xj:titleTextColor="#00ff00"
         xj:titleTextSize="19sp"/>
 
+    <!-- 图片的宽度大于字体，且View宽高设置为match_parent-->
     <com.haha.myself.view.ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
