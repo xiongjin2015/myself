@@ -7,4 +7,10 @@
     <string name="reset_button">Reset</string>
     <string name="title_activity_parcel_test">ParcelTest</string>
     <string name="title_activity_parcel_result">ParcelResult</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+
+    <string name="dialog_test1">弹出系统级Dialog</string>
+    <string name="dialog_test2">通过WindowManager实现</string>
+
+    <string name="dialog_msg">Loading...</string>
 </resources>
