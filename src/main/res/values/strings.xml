@@ -13,4 +13,5 @@
     <string name="dialog_test2">通过WindowManager实现</string>
 
     <string name="dialog_msg">Loading...</string>
+    <string name="title_activity_handler">HandlerActivity</string>
 </resources>
