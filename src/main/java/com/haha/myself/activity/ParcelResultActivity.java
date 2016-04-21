@@ -8,9 +8,15 @@ import android.widget.TextView;
 
 import com.haha.myself.R;
 import com.haha.myself.entity.Entity;
+import com.haha.myself.manage.Single;
 
 import org.json.JSONException;
 
+/**
+ * 1.Parcel study
+ *
+ * 2.GC and Memery Leaky Study
+ */
 public class ParcelResultActivity extends AppCompatActivity {
 
     @Override
@@ -27,9 +33,13 @@ public class ParcelResultActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         setContentView(tv);
-        // Single.getInstance(this);
+        //Single.getInstance(this); //uncomment to this statments,Memeory Leaky because of single instance hold reference of activity
     }
 
+    /**
+     * 如果内存泄露，本方法将不会被调用：表示activity没有被回收；
+     * @throws Throwable
+     */
     @Override
     protected void finalize() throws Throwable {
         Log.i("XJ", "---gc---");
