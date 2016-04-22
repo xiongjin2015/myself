@@ -77,6 +77,16 @@
                 <category android:name="haha.myself" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.RoundImageActivity"
+            android:label="@string/title_activity_round_image"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="haha.custom.view" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
