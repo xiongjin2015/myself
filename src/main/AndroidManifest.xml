@@ -87,6 +87,16 @@
                 <category android:name="haha.custom.view" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.RoundedImageActivity"
+            android:label="@string/title_activity_rounded_image"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="haha.custom.view" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

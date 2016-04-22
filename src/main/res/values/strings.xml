@@ -15,4 +15,5 @@
     <string name="dialog_msg">Loading...</string>
     <string name="title_activity_handler">HandlerActivity</string>
     <string name="title_activity_round_image">RoundImageActivity</string>
+    <string name="title_activity_rounded_image">RoundedImageActivity</string>
 </resources>
