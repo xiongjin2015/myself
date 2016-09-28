@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.haha.myself" >
+    package="com.haha.myself">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
@@ -8,10 +8,10 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name=".activity.CustomViewActivity"
-            android:label="@string/title_activity_custom_view" >
+            android:label="@string/title_activity_custom_view">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +29,7 @@
         </activity>
         <activity
             android:name=".activity.PieChartActivity"
-            android:label="@string/title_activity_pie_chart" >
+            android:label="@string/title_activity_pie_chart">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,7 +38,7 @@
         </activity>
         <activity
             android:name=".activity.ParcelTestActivity"
-            android:label="@string/title_activity_parcel_test" >
+            android:label="@string/title_activity_parcel_test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,7 +50,7 @@
             android:label="@string/title_activity_parcel_result" />
         <activity
             android:name=".activity.ImageTextViewActivity"
-            android:label="Custom Compund Image&amp;TextView  Test" >
+            android:label="Custom Compund Image&amp;TextView  Test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -60,7 +60,7 @@
         <activity
             android:name=".activity.DialogActivity"
             android:label="@string/title_activity_dialog"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -70,7 +70,7 @@
         <activity
             android:name=".activity.HandlerActivity"
             android:label="@string/title_activity_handler"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -80,7 +80,7 @@
         <activity
             android:name=".activity.RoundImageActivity"
             android:label="@string/title_activity_round_image"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -90,11 +90,21 @@
         <activity
             android:name=".activity.RoundedImageActivity"
             android:label="@string/title_activity_rounded_image"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="haha.custom.view" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ScrollHideLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="ScrollHideLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="haha.myself" />
             </intent-filter>
         </activity>
     </application>

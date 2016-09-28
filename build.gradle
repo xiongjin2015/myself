@@ -3,9 +3,9 @@ apply plugin: 'com.android.application'
 
 android {
     //编译SDK的版本
-    compileSdkVersion 22
+    compileSdkVersion 24
     //Build Tools的版本
-    buildToolsVersion "23.0.1"
+    buildToolsVersion "24"
 
     defaultConfig {
         //应用的包名
@@ -51,6 +51,6 @@ dependencies {
     compile files('libs/universal-image-loader-1.9.3.jar')
     //编译extras目录下的CommonTool模块,表示该module依赖其他库module
     //compile project(':self')
-    compile 'com.android.support:appcompat-v7:22.2.1'
-    compile 'com.android.support:design:22.2.1'
+    compile 'com.android.support:appcompat-v7:24'
+    compile 'com.android.support:design:24.2.1'
 }
