@@ -99,8 +99,18 @@
         </activity>
         <activity
             android:name=".activity.ScrollHideLayoutActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="ScrollHideLayout">
+            android:label="ScrollHideLayout"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="haha.myself" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.EventTestActivity"
+            android:label="Android Event Test"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
