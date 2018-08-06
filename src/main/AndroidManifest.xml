@@ -109,11 +109,25 @@
         </activity>
         <activity
             android:name=".activity.EventTestActivity"
-            android:label="Android Event Test"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="Android Event Test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="haha.myself" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.EventStudyActivity"
+            android:label="@string/title_activity_event_study">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="haha.myself" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MVVMStudyActivity"
+            android:label="MVVM Study">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="haha.myself" />
             </intent-filter>
         </activity>

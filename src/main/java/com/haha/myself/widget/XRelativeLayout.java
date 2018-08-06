@@ -41,41 +41,28 @@ public class XRelativeLayout extends RelativeLayout {
         mTouchSlop = configuration.getScaledPagingTouchSlop();
     }
 
-    public XRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        final ViewConfiguration configuration = ViewConfiguration.get(context);
-        mTouchSlop = configuration.getScaledPagingTouchSlop();
-    }
-
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                mLastMotionX = ev.getX();
-                mLastMotionY = ev.getY();
-                break;
+                Log.d("XJ", "parent:onInterceptTouchEvent:MotionEvent.ACTION_DOWN");
+                return false;
             case MotionEvent.ACTION_MOVE:
-                break;
+                Log.d("XJ", "parent:onInterceptTouchEvent:MotionEvent.ACTION_MOVE");
+                return true;
             case MotionEvent.ACTION_UP:
-                float x = ev.getX();
-                float y = ev.getY();
-                float dx = Math.abs(mLastMotionX - x);
-                float dy = Math.abs(mLastMotionY - y);
-                if (dx <= mTouchSlop) {
-                    Log.d("XJ", "up----viewPager.requestDisallowInterceptTouchEvent(true)");
-                    viewPager.requestDisallowInterceptTouchEvent(true);
-                }
-                break;
+                Log.d("XJ", "parent:onInterceptTouchEvent:MotionEvent.ACTION_UP");
+                return true;
         }
 
         boolean isIntercept = super.onInterceptTouchEvent(ev);
-        Log.d("XJ", "onInterceptTouchEvent:"+isIntercept);
-        return false;
+        Log.d("XJ", "parent:onInterceptTouchEvent:"+isIntercept);
+        return isIntercept;
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
-        Log.d("XJ", "onTouchEvent");
+        Log.d("XJ", "onTouchEvent"+ev.getAction());
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 mLastMotionX = ev.getX();

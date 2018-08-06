@@ -38,7 +38,7 @@ public class EventTestActivity extends AppCompatActivity {
         rootView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent ev) {
-                Log.d("XJ", "onTouch");
+                Log.d("XJ", "onTouch"+ev.getAction());
                 switch (ev.getAction()) {
                     case MotionEvent.ACTION_DOWN:
                         mLastMotionX = ev.getX();

@@ -1,5 +1,10 @@
 //声明是Android程序，如果是android库，应该是'com.android.library'
-apply plugin: 'com.android.application'
+if (isModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+
 
 android {
     //编译SDK的版本
@@ -10,7 +15,7 @@ android {
     defaultConfig {
         //应用的包名
         applicationId "com.haha.myself"
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -46,6 +51,8 @@ android {
 
 dependencies {
     //编译libs目录下的所有jar包
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:support-v4:24.2.1'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //依赖appcompat库
     compile files('libs/universal-image-loader-1.9.3.jar')
@@ -53,4 +60,9 @@ dependencies {
     //compile project(':self')
     compile 'com.android.support:appcompat-v7:24'
     compile 'com.android.support:design:24.2.1'
+    //implementation "android.arch.lifecycle:extensions:$rootProject.archLifecycleVersion"
+
+    compile "android.arch.lifecycle:runtime:1.0.0"
+    compile "android.arch.lifecycle:extensions:1.0.0"
+    annotationProcessor "android.arch.lifecycle:compiler:1.0.0"
 }
