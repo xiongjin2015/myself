@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haha.myself.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_blue_grey_900">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="88dp"
+        android:layout_height="199dp"
+        android:layout_gravity="center"
+        android:padding="9dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:enabled="true"
+        android:text="Hello World"
+        android:textColor="@color/slate"
+        android:background="@color/emerald"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="88dp"
+        android:layout_height="199dp"
+        android:layout_gravity="center"
+        android:padding="9dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <com.haha.myself.widget.XViewPaper
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/left_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textColor="@color/seafoam"
+            android:textSize="29dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/right_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:textColor="@color/seafoam"
+            android:textSize="29dp"
+            android:gravity="center"/>
+
+    </com.haha.myself.widget.XViewPaper>
+
+</com.haha.myself.widget.XRelativeLayout>

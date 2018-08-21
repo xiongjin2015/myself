@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义属性和样式：定义了字体文本、字体颜色、字体大小；format是该值的取值类型 -->
+<!-- format可选值有：string、color、demension、integer、enum、reference、float、boolean、fraction和flag -->
+<resources>
+    <declare-styleable name="PieChart">
+        <attr name="showTxt" format="boolean"/>
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="autoCenterPointerInSlice" format="boolean"/>
+        <attr name="highlightStrength" format="float"/>
+        <attr name="labelColor" format="color"/>
+        <attr name="labelHeight" format="dimension"/>
+        <attr name="labelWidth" format="dimension"/>
+        <attr name="labelY" format="dimension"/>
+        <attr name="pieRotation" format="integer"/>
+        <attr name="pointerRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="titleText" format="string"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="image" format="reference"/>
+        <attr name="imageScaleType" format="enum">
+            <enum name="fillXY" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>
