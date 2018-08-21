@@ -90,24 +90,22 @@ public class CustomImageView extends View {
 
             int attr = a.getIndex(i);
 
-            switch (attr) {
-                case R.styleable.CustomImageView_image:
-                    mImage = BitmapFactory.decodeResource(getResources(), a.getResourceId(attr, 0));//将resId转换成Bitmap的Api
-                    break;
-                case R.styleable.CustomImageView_imageScaleType:
-                    mImageScale = a.getInt(attr, 0);
-                    break;
-                case R.styleable.CustomImageView_titleText:
-                    mText = a.getString(attr);
-                    break;
-                case R.styleable.CustomImageView_titleTextColor:
-                    mTextColor = a.getColor(attr, Color.BLACK);
-                    break;
-                case R.styleable.CustomImageView_titleTextSize:
-                    mTextSize = a.getDimension(attr, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 16, getResources().getDisplayMetrics()));
-                    break;
-                default:
-                    break;
+            if (attr == R.styleable.CustomImageView_image) {
+                mImage = BitmapFactory.decodeResource(getResources(), a.getResourceId(attr, 0));//将resId转换成Bitmap的Api
+
+            } else if (attr == R.styleable.CustomImageView_imageScaleType) {
+                mImageScale = a.getInt(attr, 0);
+
+            } else if (attr == R.styleable.CustomImageView_titleText) {
+                mText = a.getString(attr);
+
+            } else if (attr == R.styleable.CustomImageView_titleTextColor) {
+                mTextColor = a.getColor(attr, Color.BLACK);
+
+            } else if (attr == R.styleable.CustomImageView_titleTextSize) {
+                mTextSize = a.getDimension(attr, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 16, getResources().getDisplayMetrics()));
+
+            } else {
             }
 
             a.recycle();

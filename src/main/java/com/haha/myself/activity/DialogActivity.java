@@ -28,15 +28,12 @@ public class DialogActivity extends AppCompatActivity {
     }
 
     public void onClick(View view){
-        switch (view.getId()){
-            case R.id.btn_test1:
-                showProgressDialog(R.string.dialog_msg);
-                break;
-            case R.id.btn_test2:
-                showDialogByWindow();
-                break;
-            default:
-                break;
+        int i = view.getId();
+        if (i == R.id.btn_test1) {
+            showProgressDialog(R.string.dialog_msg);
+        } else if (i == R.id.btn_test2) {
+            showDialogByWindow();
+        } else {
         }
     }
 
